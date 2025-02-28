@@ -3,7 +3,7 @@
 angular.module('LunchCheck',[])
 .controller('LunchCheckController', function($scope) {
 
-$scope.foodlist= "list comma separated dishes you usually have for lunch";
+$scope.foodlist= "list comma separated dishes you usually have for lunch!!!!!";
 
 $scope.clickTooMuch= function(){
 
