@@ -13,18 +13,19 @@ var listofitems=$scope.foodlist.split(",");
 
 console.log(listofitems);
 
+var filterList = listofitems.filter(item=>item.trim()!=='')
 
 
-if(listofitems){
+if(filterList){
 
-        if (listofitems[0]===''){
+        if (filterList[0]===''){
             $scope.textmessage="You have an empty list - please fix";
         }
 
-   else if(listofitems.length>=1 && listofitems.length<4){
+   else if(filterList.length>=1 && filterList.length<4){
        $scope.textmessage="Enjoy!!";
      }
-     else if (listofitems.length>=4){
+     else if (filterList.length>=4){
     $scope.textmessage="To Much!!"
 }
 
