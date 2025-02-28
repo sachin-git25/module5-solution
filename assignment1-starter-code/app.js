@@ -15,6 +15,7 @@ console.log(listofitems);
 
 var filterList = listofitems.filter(item=>item.trim()!=='')
 
+console.log(listofitems);
 
 if(filterList){
 
